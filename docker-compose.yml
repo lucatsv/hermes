@@ -1,0 +1,46 @@
+version: '3.1'
+
+services:
+  mongodb:
+    image: mongo
+    container_name: 'database-mongo'
+    restart: always
+    volumes:
+      - ./mongodb/mongo_init.js:/docker-entrypoint-initdb.d/mongo_init.js:ro
+      - ./db-data:/data/dbcd
+    ports: 
+      - 27017:27017
+    environment:
+      MONGO_INITDB_DATABASE: messages
+      MONGO_INITDB_ROOT_USERNAME: admin
+      MONGO_INITDB_ROOT_PASSWORD: admin
+
+  webservice:
+    build:
+      context: ./microservices/webservice
+      dockerfile: Dockerfile
+    depends_on: 
+      - mongodb
+    ports:
+      - "8080:8080"
+    container_name: webservice
+    links:
+      - mongodb:app_db
+      - authservice:app_auth
+
+  authservice:
+    build:
+      context: ./microservices/authservice
+      dockerfile: Dockerfile
+    ports:
+        - "8081:8081"
+    container_name: authservice
+      
+  redis:
+    image: redis
+    container_name: 'database-redis'
+    restart: always
+    volumes: 
+      - ./redis/redis.conf:/usr/local/etc/redis/redis.conf
+    ports:
+      - "6379:6379"
