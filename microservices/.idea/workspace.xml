@@ -5,18 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="67ff2d84-4814-48c7-9cb3-eb1fc86cdce5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/authservice/src/main/kotlin/com/hermes/authservice/configuration/SecurityConfigurer.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authservice/src/main/kotlin/com/hermes/authservice/model/TokenResponse.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authservice/src/main/kotlin/com/hermes/authservice/model/User.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authservice/src/main/kotlin/com/hermes/authservice/repository/UserRepository.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authservice/src/main/kotlin/com/hermes/authservice/service/jwt/JWTService.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authservice/src/main/kotlin/com/hermes/authservice/service/user/UserService.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authservice/src/main/kotlin/com/hermes/authservice/service/user/UserServiceImpl.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/authservice/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/authservice/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/authservice/src/main/kotlin/com/hermes/authservice/controller/AuthController.kt" beforeDir="false" afterPath="$PROJECT_DIR$/authservice/src/main/kotlin/com/hermes/authservice/controller/AuthController.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/common.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/webservice/src/main/java/com/hermes/webservice/utils/JWTUtility.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webservice/src/main/java/com/hermes/webservice/configuration/SecurityConfigurer.java" beforeDir="false" afterPath="$PROJECT_DIR$/webservice/src/main/java/com/hermes/webservice/configuration/SecurityConfigurer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webservice/src/main/java/com/hermes/webservice/controllers/NotificationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/webservice/src/main/java/com/hermes/webservice/controllers/NotificationController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,9 +48,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Kotlin Interface" />
         <option value="Kotlin Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -99,7 +90,7 @@
       <recent name="com.hermes.authservice.service.jwt" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.auth service">
+  <component name="RunManager" selected="Application.web service">
     <configuration name="auth service" type="Application" factoryName="Application">
       <option name="ALTERNATIVE_JRE_PATH" value="Kotlin SDK" />
       <option name="MAIN_CLASS_NAME" value="com.hermes.authservice.AuthserviceApplicationKt" />

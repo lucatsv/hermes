@@ -4,7 +4,6 @@ import com.hermes.webservice.models.Notification;
 import com.hermes.webservice.models.jwt.JWTRequest;
 import com.hermes.webservice.models.jwt.JWTResponse;
 import com.hermes.webservice.services.notification.NotificationService;
-import com.hermes.webservice.utils.JWTUtility;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.BadCredentialsException;
 import org.springframework.security.core.GrantedAuthority;
@@ -19,8 +18,7 @@ public class NotificationController {
 
     @Autowired
     NotificationService notificationService;
-    @Autowired
-    JWTUtility jwtUtility;
+
 
     @PostMapping("notification")
     public String CreateNotification(@RequestBody Notification notification) {
