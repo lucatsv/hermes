@@ -4,7 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="67ff2d84-4814-48c7-9cb3-eb1fc86cdce5" name="Default Changelist" comment="" />
+    <list default="true" id="67ff2d84-4814-48c7-9cb3-eb1fc86cdce5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webservice/src/main/java/com/hermes/webservice/configuration/SecurityConfigurer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webservice/src/main/java/com/hermes/webservice/filter/JwtRequestFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webservice/src/main/java/com/hermes/webservice/models/jwt/JWTRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webservice/src/main/java/com/hermes/webservice/models/jwt/JWTResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webservice/src/main/java/com/hermes/webservice/utils/JWTUtility.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webservice/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/webservice/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webservice/src/main/java/com/hermes/webservice/controllers/NotificationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/webservice/src/main/java/com/hermes/webservice/controllers/NotificationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webservice/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/webservice/src/main/resources/application.properties" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -34,38 +45,6 @@
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="authservice" type="f1a62948:ProjectNode" />
               </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="authservice" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="authservice" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="build" type="c8890929:TasksNode$1" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="webservice" type="f1a62948:ProjectNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="webservice" type="f1a62948:ProjectNode" />
-                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="webservice" type="f1a62948:ProjectNode" />
-                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
-                <item name="compileClasspath" type="62daadca:ExternalSystemViewDefaultContributor$DependencyScopeExternalSystemNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="webservice" type="f1a62948:ProjectNode" />
-                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
-                <item name="runtimeClasspath" type="62daadca:ExternalSystemViewDefaultContributor$DependencyScopeExternalSystemNode" />
-              </path>
             </expand>
             <select />
           </tree_state>
@@ -76,10 +55,13 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Kotlin Class" />
+        <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="GitSEFilterConfiguration">
     <file-type-list>
@@ -90,6 +72,7 @@
     </file-type-list>
   </component>
   <component name="ProjectId" id="1vSQfBZiMLPn039g7qCzvBA4dUc" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -98,6 +81,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15666667" />
@@ -109,7 +93,7 @@
       <recent name="com.hermes.authservice" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.authservice [bootJar]">
+  <component name="RunManager" selected="Application.web service">
     <configuration name="auth service" type="Application" factoryName="Application">
       <option name="ALTERNATIVE_JRE_PATH" value="Kotlin SDK" />
       <option name="MAIN_CLASS_NAME" value="com.hermes.authservice.AuthserviceApplicationKt" />
@@ -231,6 +215,17 @@
     </task>
     <servers />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
@@ -241,5 +236,10 @@
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="GradleRunConfiguration">
+        <watch expression="authorizationHeader.substring(6)" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>
