@@ -2,6 +2,7 @@ package com.hermes.authservice.service.jwt
 
 import io.jsonwebtoken.Claims
 import io.jsonwebtoken.Jwts
+import org.springframework.beans.factory.annotation.Value
 import org.springframework.security.core.userdetails.UserDetails
 import org.springframework.stereotype.Component
 import java.io.Serializable
@@ -10,8 +11,16 @@ import java.util.function.Function
 
 
 @Component
-class JWTService : Serializable {
-    private val secret = "secret"
+class JWTService : Serializable  {
+
+    @Value("\${jwt.secret}")
+    private lateinit var secret : String;
+
+    @Value("\${jwt.expirationInMinutes}")
+    private lateinit var expirationInMinutesStr : String;
+    fun expirationTimeInMiliseconds(): Long {
+       return expirationInMinutesStr.toLong() * 60 * 1000;
+    }
 
     //retrieve username from jwt token
     fun getUsernameFromToken(token: String?): String {
@@ -48,7 +57,7 @@ class JWTService : Serializable {
 
     private fun doGenerateToken(claims: Map<String, Any>, subject: String): String {
         return Jwts.builder().setClaims(claims).setSubject(subject).setIssuedAt(Date(System.currentTimeMillis()))
-            .setExpiration(Date(System.currentTimeMillis() + JWT_TOKEN_VALIDITY * 1000))
+            .setExpiration(Date(System.currentTimeMillis() + expirationTimeInMiliseconds()))
             .signWith(io.jsonwebtoken.SignatureAlgorithm.HS512, secret).compact()
     }
 
@@ -58,8 +67,5 @@ class JWTService : Serializable {
         return username == userDetails.getUsername() && !isTokenExpired(token)
     }
 
-    companion object {
-        private const val serialVersionUID = -2550185165626007488L
-        const val JWT_TOKEN_VALIDITY = (10 * 60 * 60).toLong()
-    }
+
 }
