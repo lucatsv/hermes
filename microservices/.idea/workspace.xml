@@ -5,10 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="67ff2d84-4814-48c7-9cb3-eb1fc86cdce5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/authservice/src/main/kotlin/com/hermes/authservice/model/configuration/JWTConfig.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/authservice/src/main/kotlin/com/hermes/authservice/model/UserDetailsDecorator.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../docker-compose.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/authservice/src/main/kotlin/com/hermes/authservice/service/jwt/JWTService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/authservice/src/main/kotlin/com/hermes/authservice/service/jwt/JWTService.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authservice/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/authservice/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authservice/src/main/kotlin/com/hermes/authservice/controller/AuthController.kt" beforeDir="false" afterPath="$PROJECT_DIR$/authservice/src/main/kotlin/com/hermes/authservice/controller/AuthController.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authservice/src/main/kotlin/com/hermes/authservice/model/User.kt" beforeDir="false" afterPath="$PROJECT_DIR$/authservice/src/main/kotlin/com/hermes/authservice/model/User.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authservice/src/main/kotlin/com/hermes/authservice/repository/UserRepository.kt" beforeDir="false" afterPath="$PROJECT_DIR$/authservice/src/main/kotlin/com/hermes/authservice/repository/UserRepository.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authservice/src/main/kotlin/com/hermes/authservice/service/user/UserServiceImpl.kt" beforeDir="false" afterPath="$PROJECT_DIR$/authservice/src/main/kotlin/com/hermes/authservice/service/user/UserServiceImpl.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/authservice/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/authservice/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -236,24 +240,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
           <url>file://$PROJECT_DIR$/authservice/src/main/kotlin/com/hermes/authservice/controller/AuthController.kt</url>
-          <line>26</line>
+          <line>27</line>
           <option name="timeStamp" value="8" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/authservice/src/main/kotlin/com/hermes/authservice/service/jwt/JWTService.kt</url>
-          <line>66</line>
-          <option name="timeStamp" value="12" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/authservice/src/main/kotlin/com/hermes/authservice/service/jwt/JWTService.kt</url>
-          <line>65</line>
-          <option name="timeStamp" value="13" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="kotlin-field">
-          <url>file://$PROJECT_DIR$/authservice/src/main/kotlin/com/hermes/authservice/service/jwt/JWTService.kt</url>
-          <line>77</line>
-          <properties myFieldName="JWT_TOKEN_VALIDITY" myClassName="com.hermes.authservice.service.jwt.JWTService.Companion" />
-          <option name="timeStamp" value="11" />
+          <url>file://$PROJECT_DIR$/authservice/src/main/kotlin/com/hermes/authservice/controller/AuthController.kt</url>
+          <line>18</line>
+          <option name="timeStamp" value="17" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -265,6 +258,7 @@
         <watch expression="config.secret" />
         <watch expression="Date(System.currentTimeMillis() + JWT_TOKEN_VALIDITY * 1000)" />
         <watch expression="(10 * 60 * 60).toLong()" />
+        <watch expression="userRepo.findAll()" language="kotlin" />
       </configuration>
     </watches-manager>
   </component>

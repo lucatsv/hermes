@@ -1,7 +1,10 @@
 package com.hermes.authservice.repository
 
 import com.hermes.authservice.model.User
+import org.springframework.data.mongodb.repository.MongoRepository
+import org.springframework.stereotype.Repository
 
-interface UserRepository
+@Repository
+interface UserRepository : MongoRepository<User, String>
 {
 }
