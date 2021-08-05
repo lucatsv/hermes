@@ -1,5 +1,6 @@
 package com.hermes.authservice.model
 
+import com.fasterxml.jackson.annotation.JsonIgnore
 import jdk.jfr.Enabled
 import org.springframework.data.annotation.Id
 import org.springframework.data.mongodb.core.mapping.Document
@@ -12,7 +13,7 @@ class User (
     val firstName : String,
     val lastName : String,
     var email : String,
-    var password : String,
+    @JsonIgnore var password : String,
     val role : String,
     val expired : Boolean,
     val locked : Boolean,

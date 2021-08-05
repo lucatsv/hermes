@@ -2,13 +2,10 @@ package com.hermes.authservice.controller
 
 import com.hermes.authservice.model.TokenRequest
 import com.hermes.authservice.model.TokenResponse
-import com.hermes.authservice.model.User
 import com.hermes.authservice.model.UserDetailsDecorator
-import org.springframework.web.bind.annotation.PostMapping
-import org.springframework.web.bind.annotation.RequestBody
-import org.springframework.web.bind.annotation.RestController
 import com.hermes.authservice.service.jwt.JWTService;
 import com.hermes.authservice.service.user.UserService
+import org.springframework.web.bind.annotation.*
 
 @RestController
 class AuthController(val jwtService: JWTService, val userService : UserService) {
@@ -21,7 +18,6 @@ class AuthController(val jwtService: JWTService, val userService : UserService) 
         return TokenResponse(jwtService.generateToken(UserDetailsDecorator(user)))
     }
 
-
     @PostMapping(path = ["validate-token"])
     fun validateToken(@RequestBody tokenResponse: TokenResponse) : Boolean {
 
@@ -31,6 +27,5 @@ class AuthController(val jwtService: JWTService, val userService : UserService) 
 
         return jwtService.validateToken(tokenResponse.token, UserDetailsDecorator(user))
     }
-
-
+    
 }

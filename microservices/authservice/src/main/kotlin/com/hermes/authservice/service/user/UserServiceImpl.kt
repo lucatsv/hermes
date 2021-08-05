@@ -8,22 +8,23 @@ import org.springframework.stereotype.Service
 @Service
 class UserServiceImpl (@Autowired val userRepo : UserRepository) : UserService {
 
-    override fun findUser(username: String, password: String): User {
+    override fun findUser(email: String, password: String): User {
 
+        val user = userRepo.findByEmail(email)
 
-        val allUsers = userRepo.findAll();
-
-        return allUsers.first { it.email == username && it.password == password } ?: throw Exception("user not found")
+        return if (user != null && user.password == password)
+                    user
+               else
+                   throw Exception("user not found")
     }
 
-    override fun findUser(username: String) : User {
-        val user = userRepo.findAll().first{ it.email == username }
+    override fun findUser(email: String) : User {
+        val user = userRepo.findByEmail(email)
         return if(user == null) {
             throw Exception("user not found")
         } else {
             user
         }
-
     }
 
     override fun createUser(user: User): User {

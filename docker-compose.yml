@@ -35,7 +35,23 @@ services:
     ports:
         - "8081:8081"
     container_name: authservice
-      
+    links:
+      - userdb:user_db
+    
+  userdb:  
+    image: mongo
+    container_name: 'database-user'
+    restart: always
+    volumes:
+      - ./userdb/mongo_init.js:/docker-entrypoint-initdb.d/mongo_init.js:ro
+      - ./db-data:/data/dbcd
+    ports: 
+      - 27018:27017
+    environment:
+      MONGO_INITDB_DATABASE: users
+      MONGO_INITDB_ROOT_USERNAME: admin
+      MONGO_INITDB_ROOT_PASSWORD: admin
+
   redis:
     image: redis
     container_name: 'database-redis'

@@ -5,15 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="67ff2d84-4814-48c7-9cb3-eb1fc86cdce5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/authservice/src/main/kotlin/com/hermes/authservice/model/UserDetailsDecorator.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../docker-compose.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/authservice/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/authservice/build.gradle.kts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/authservice/src/main/kotlin/com/hermes/authservice/controller/AuthController.kt" beforeDir="false" afterPath="$PROJECT_DIR$/authservice/src/main/kotlin/com/hermes/authservice/controller/AuthController.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/authservice/src/main/kotlin/com/hermes/authservice/model/User.kt" beforeDir="false" afterPath="$PROJECT_DIR$/authservice/src/main/kotlin/com/hermes/authservice/model/User.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/authservice/src/main/kotlin/com/hermes/authservice/repository/UserRepository.kt" beforeDir="false" afterPath="$PROJECT_DIR$/authservice/src/main/kotlin/com/hermes/authservice/repository/UserRepository.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/authservice/src/main/kotlin/com/hermes/authservice/service/user/UserServiceImpl.kt" beforeDir="false" afterPath="$PROJECT_DIR$/authservice/src/main/kotlin/com/hermes/authservice/service/user/UserServiceImpl.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/authservice/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/authservice/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -237,16 +234,6 @@
           <url>file://$PROJECT_DIR$/webservice/src/com/hermes/webservice/Application.java</url>
           <line>18</line>
           <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/authservice/src/main/kotlin/com/hermes/authservice/controller/AuthController.kt</url>
-          <line>27</line>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/authservice/src/main/kotlin/com/hermes/authservice/controller/AuthController.kt</url>
-          <line>18</line>
-          <option name="timeStamp" value="17" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
